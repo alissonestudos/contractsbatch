@@ -1,0 +1,11 @@
+**.settings/**
+**.idea/**
+target/*
+log/*
+.classpath
+jab-wallet.log
+.factorypath
+
+jab-walletbatch.log
+
+.project

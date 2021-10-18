@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- This configuration file was written by the eclipse-cs plugin configuration 
+	editor -->
+<!-- Checkstyle-Configuration: Isban_Checkstyle Description: none -->
+<!DOCTYPE module PUBLIC "-//Puppy Crawl//DTD Check Configuration 1.2//EN" "http://www.puppycrawl.com/dtds/configuration_1_2.dtd">
+<module name="Checker">
+	<property name="severity" value="warning" />
+	<property name="charset" value="ISO-8859-1" />
+	<property name="localeCountry" value="BR" />
+	<property name="localeLanguage" value="pt" />
+	<module name="TreeWalker">
+		<property name="tabWidth" value="4" />
+		<module name="DefaultComesLast" />
+		<module name="FallThrough" />
+		<module name="HiddenField">
+			<property name="ignoreConstructorParameter" value="true" />
+			<property name="ignoreSetter" value="true" />
+		</module>
+		<module name="IllegalImport">
+			<property name="severity" value="error" />
+		</module>
+		<module name="IllegalType">
+			<metadata
+				name="com.atlassw.tools.eclipse.checkstyle.comment"
+				value="Impede uso de classes concretas (Sufixo *Impl)" />
+			<property name="severity" value="error" />
+			<property name="tokens"
+				value="METHOD_DEF,PARAMETER_DEF,VARIABLE_DEF" />
+			<property name="illegalClassNames" value="*Impl" />
+			<property name="format" value="^.*?Impl$" />
+		</module>
+		<module name="PackageName">
+			<property name="severity" value="error" />
+			<property name="format"
+				value="^com\.altec\.bsbr\.app\.${app.sigla}\.[a-z]+(\.[a-z][a-z]*)*$" />
+		</module>
+		<module name="PackageDeclaration">
+			<property name="severity" value="error" />
+		</module>
+		<module name="RedundantImport">
+			<property name="severity" value="warning" />
+		</module>
+		<module name="UnusedImports" />
+		<module name="IllegalInstantiation">
+			<property name="severity" value="error" />
+			<property name="classes" value="*ServiceImpl" />
+		</module>
+		<module name="ImportControl">
+			<property name="severity" value="error" />
+			<property name="file"
+				value="${config.location}/Isban_CheckStyle_ImportControl.xml" />
+		</module>
+	</module>
+</module>

@@ -1,0 +1,474 @@
+<?xml version="1.0"?>
+<!DOCTYPE import-control PUBLIC
+    "-//Puppy Crawl//DTD Import Control 1.0//EN"
+    "http://www.puppycrawl.com/dtds/import_control_1_0.dtd">
+
+<!-- Atencao: todos os pacotes devem ter o nome totalmente qualificado -->
+
+<import-control pkg="com.altec.bsbr.app">
+
+	<subpackage name="$APP_SIGLA">
+
+		<subpackage name="aea">
+
+			<allow pkg="java" />
+			<allow pkg="javax" />
+			<allow pkg="com.altec.bsbr.app" />
+			<allow pkg="com.altec.bsbr.fw" />
+
+		</subpackage>
+
+		<subpackage name="aop">
+
+			<allow pkg="java" />
+			<allow pkg="javax" />
+			<allow pkg="com.altec.bsbr.app" />
+			<allow pkg="com.altec.bsbr.fw" />
+			<allow pkg="org.aspectj" />
+
+		</subpackage>
+
+		<subpackage name="annotation">
+
+			<allow pkg="java" />
+			<allow pkg="javax" />
+			<allow pkg="com.altec.bsbr.app" />
+			<allow pkg="com.altec.bsbr.fw" />
+
+		</subpackage>
+
+		<subpackage name="audit">
+
+			<allow pkg="java" />
+			<allow pkg="javax" />
+			<allow pkg="com.altec.bsbr.app" />
+
+		</subpackage>
+
+		<subpackage name="batch">
+
+			<allow pkg="java" />
+			<allow pkg="javax" />
+			<allow pkg="com.altec.bsbr.app" />
+			<allow pkg="com.altec.bsbr.fw" />
+			<allow pkg="org.joda.time" />
+			<allow pkg="org.slf4j" />
+			<allow pkg="org.springframework" />
+
+		</subpackage>
+
+		<subpackage name="converter">
+
+			<allow pkg="java" />
+			<allow pkg="javax" />
+			<allow pkg="com.altec.bsbr.app" />
+			<allow pkg="com.altec.bsbr.fw" />
+
+		</subpackage>
+
+		<subpackage name="dao">
+
+			<allow pkg="java" />
+			<allow pkg="com.altec.bsbr.app.$APP_SIGLA.entity" />
+			<allow pkg="com.altec.bsbr.app.$APP_SIGLA.valueobject" />
+			<allow pkg="com.altec.bsbr.app.$APP_SIGLA.dto" />
+			<allow pkg="com.altec.bsbr.app.$APP_SIGLA.exception" />
+			<allow pkg="org.joda" />
+
+			<subpackage name="impl">
+
+				<allow pkg="java" />
+				<allow pkg="javax" />
+				<allow pkg="com.altec.bsbr.app.$APP_SIGLA.entity" />
+				<allow pkg="com.altec.bsbr.app.$APP_SIGLA.valueobject" />
+				<allow pkg="com.altec.bsbr.app.$APP_SIGLA.dto" />
+				<allow pkg="com.altec.bsbr.app.$APP_SIGLA.dao" />
+				<allow pkg="com.altec.bsbr.app.$APP_SIGLA.util" />
+				<allow pkg="com.altec.bsbr.app.$APP_SIGLA.exception" />
+				<allow pkg="com.altec.bsbr.fw.dao" />
+				<allow pkg="org.springframework" />
+				<allow pkg="org.slf4j" />
+				<allow pkg="org.hibernate" />
+				<allow pkg="org.apache.commons" />
+				<allow pkg="org.joda" />
+
+			</subpackage>
+
+		</subpackage>
+
+		<subpackage name="dto">
+
+			<allow pkg="java" />
+			<allow pkg="javax" />
+			<allow pkg="com.altec.bsbr.app" />
+			<allow pkg="com.altec.bsbr.fw" />
+			<allow pkg="org.joda" />
+			<allow pkg="org.apache.commons" />
+			<allow pkg="org.springframework" />
+
+		</subpackage>
+
+		<subpackage name="ejb">
+
+			<allow pkg="java" />
+			<allow pkg="javax" />
+			<allow pkg="com.altec.bsbr.app" />
+
+		</subpackage>
+
+		<subpackage name="entity">
+
+			<allow pkg="java" />
+			<allow pkg="javax" />
+			<allow pkg="com.altec.bsbr.app.$APP_SIGLA.valueobject" />
+			<allow pkg="com.altec.bsbr.app.$APP_SIGLA.dto" />
+			<allow pkg="com.altec.bsbr.app.$APP_SIGLA.utils" />
+			<allow pkg="com.altec.bsbr.app.$APP_SIGLA.util" />
+			<allow pkg="org.apache.commons.lang.builder" />
+			<allow pkg="org.hibernate" />
+			<allow pkg="org.joda" />
+
+		</subpackage>
+
+		<subpackage name="exception">
+
+			<allow pkg="java" />
+			<allow pkg="javax" />
+			<allow pkg="com.altec.bsbr.app" />
+			<allow pkg="com.altec.bsbr.fw" />
+
+		</subpackage>
+
+		<subpackage name="helper">
+
+			<allow pkg="java" />
+			<allow pkg="javax" />
+			<allow pkg="com.altec.bsbr.app" />
+			<allow pkg="com.altec.bsbr.fw" />
+			<allow pkg="org.joda" />
+			<allow pkg="org.xml" />
+			<allow pkg="org.w3c" />
+			<allow pkg="org.apache.commons" />
+			<allow pkg="org.springframework" />
+			<allow pkg="org.slf4j" />
+
+		</subpackage>
+
+		<subpackage name="jms">
+
+			<allow pkg="java" />
+			<allow pkg="javax" />
+			<allow pkg="com.altec.bsbr.app" />
+			<allow pkg="com.altec.bsbr.fw" />
+			<allow pkg="org.apache.commons" />
+			<allow pkg="org.slf4j" />
+			<allow pkg="org.springframework" />
+			<allow pkg="org.joda" />
+
+			<subpackage name="impl">
+
+				<allow pkg="java" />
+				<allow pkg="javax" />
+				<allow pkg="com.altec.bsbr.app.$APP_SIGLA.entity" />
+				<allow pkg="com.altec.bsbr.app.$APP_SIGLA.valueobject" />
+				<allow pkg="com.altec.bsbr.app.$APP_SIGLA.dto" />
+				<allow pkg="com.altec.bsbr.app.$APP_SIGLA.dao" />
+				<allow pkg="com.altec.bsbr.app.$APP_SIGLA.service" />
+				<allow pkg="com.altec.bsbr.fw.dao" />
+				<allow pkg="org.springframework.stereotype" />
+				<allow pkg="org.springframework.beans.factory.annotation" />
+				<allow pkg="org.springframework.transaction.annotation" />
+				<allow pkg="org.slf4j" />
+				<allow pkg="org.apache.commons" />
+
+			</subpackage>
+
+		</subpackage>
+
+		<subpackage name="mbean">
+
+			<allow pkg="java" />
+			<allow pkg="javax" />
+			<allow pkg="com.altec.bsbr.app" />
+
+		</subpackage>
+
+		<subpackage name="message">
+
+			<allow pkg="java" />
+			<allow pkg="javax" />
+			<allow pkg="com.altec.bsbr.app" />
+			<allow pkg="org.slf4j" />
+
+		</subpackage>
+
+		<subpackage name="report">
+
+			<allow pkg="java" />
+			<allow pkg="javax" />
+			<allow pkg="com.altec.bsbr.app" />
+
+		</subpackage>
+
+		<subpackage name="reflection">
+
+			<allow pkg="java" />
+			<allow pkg="javax" />
+			<allow pkg="com.altec.bsbr.app" />
+			<allow pkg="com.altec.bsbr.fw" />
+			<allow pkg="org.slf4j" />
+
+		</subpackage>
+
+		<subpackage name="service">
+
+			<allow pkg="java" />
+			<allow pkg="com.altec.bsbr.app.$APP_SIGLA.entity" />
+			<allow pkg="com.altec.bsbr.app.$APP_SIGLA.valueobject" />
+			<allow pkg="com.altec.bsbr.app.$APP_SIGLA.dto" />
+			<allow pkg="com.altec.bsbr.app.$APP_SIGLA.aea" />
+			<allow pkg="com.altec.bsbr.app.$APP_SIGLA.jms" />
+			<allow pkg="com.altec.bsbr.app.$APP_SIGLA.exception" />
+			<allow pkg="com.altec.bsbr.fw" />
+			<allow pkg="org.joda" />
+
+			<subpackage name="impl">
+
+				<allow pkg="java" />
+				<allow pkg="javax" />
+				<allow pkg="com.altec.bsbr.app.$APP_SIGLA" />
+				<allow pkg="com.altec.bsbr.app.scac.service" />
+				<allow pkg="com.altec.bsbr.app.scac.dto" />
+				<allow pkg="com.altec.bsbr.fw" />
+				<allow pkg="org.springframework" />
+				<allow pkg="org.joda" />
+				<allow pkg="org.xml" />
+				<allow pkg="org.slf4j" />
+				<allow pkg="org.apache.commons" />
+
+			</subpackage>
+
+		</subpackage>
+
+
+		<subpackage name="security">
+
+			<allow pkg="java" />
+			<allow pkg="javax" />
+			<allow pkg="com.altec.bsbr.app" />
+			<allow pkg="com.altec.bsbr.fw" />
+
+			<subpackage name="authorization">
+
+				<allow pkg="java" />
+				<allow pkg="javax" />
+				<allow pkg="com.altec.bsbr.app" />
+				<allow pkg="com.altec.bsbr.fw" />
+
+			</subpackage>
+
+		</subpackage>
+
+		<subpackage name="validator">
+
+			<allow pkg="java" />
+			<allow pkg="javax" />
+			<allow pkg="com.altec.bsbr.app" />
+
+		</subpackage>
+
+		<subpackage name="valueobject">
+
+			<allow pkg="java" />
+			<allow pkg="javax" />
+			<allow pkg="com.altec.bsbr.app" />
+
+		</subpackage>
+
+		<subpackage name="web">
+
+			<allow pkg="java" />
+			<allow pkg="javax" />
+			<allow pkg="com.altec.bsbr.app.$APP_SIGLA.entity" />
+			<allow pkg="com.altec.bsbr.app.$APP_SIGLA.valueobject" />
+			<allow pkg="com.altec.bsbr.app.$APP_SIGLA.dto" />
+			<allow pkg="com.altec.bsbr.app.$APP_SIGLA.service" />
+			<allow pkg="com.altec.bsbr.app.$APP_SIGLA.util" />
+			<allow pkg="com.altec.bsbr.app.$APP_SIGLA.utils" />
+			<allow pkg="org.slf4j" />
+			<allow pkg="org.springframework" />
+			<allow pkg="br.com.gpnet.mbs.caller" />
+			<allow pkg="com.altec.bsbr.app.$APP_SIGLA.web" />
+			<allow pkg="com.altec.bsbr.fw" />
+			<allow pkg="com.altec.bsbr.app.$APP_SIGLA.wsclient" />
+			<allow pkg="net.sf.jasperreports" />
+			<allow pkg="com.icesoft" />
+			<allow pkg="org.slf4j" />
+			<allow pkg="org.joda" />
+			<allow pkg="org.apache.commons" />
+
+			<subpackage name="jsf">
+
+				<allow pkg="java" />
+				<allow pkg="javax" />
+				<allow pkg="com.altec.bsbr.app.$APP_SIGLA.entity" />
+				<allow pkg="com.altec.bsbr.app.$APP_SIGLA.valueobject" />
+				<allow pkg="com.altec.bsbr.app.$APP_SIGLA.dto" />
+				<allow pkg="com.altec.bsbr.app.$APP_SIGLA.service" />
+				<allow pkg="com.altec.bsbr.app.$APP_SIGLA.util" />
+				<allow pkg="com.altec.bsbr.app.$APP_SIGLA.utils" />
+				<allow pkg="com.altec.bsbr.app.$APP_SIGLA.jms" />
+				<allow pkg="com.altec.bsbr.app.$APP_SIGLA.reflection" />
+				<allow pkg="com.altec.bsbr.app.$APP_SIGLA.exception" />
+				<allow pkg="org.slf4j" />
+				<allow pkg="org.springframework.beans.factory" />
+				<allow pkg="org.springframework.context.annotation" />
+				<allow pkg="org.springframework.stereotype" />
+				<allow pkg="org.springframework.web.context" />
+				<allow pkg="br.com.gpnet.mbs.caller" />
+				<allow pkg="com.altec.bsbr.app.$APP_SIGLA.web" />
+				<allow pkg="com.altec.bsbr.fw" />
+				<allow pkg="com.altec.bsbr.app.$APP_SIGLA.wsclient" />
+				<allow pkg="net.sf.jasperreports" />
+				<allow pkg="com.icesoft" />
+				<allow pkg="org.slf4j" />
+				<allow pkg="org.joda" />
+				<allow pkg="org.apache.commons" />
+
+			</subpackage>
+
+			<subpackage name="listener">
+
+				<allow pkg="java" />
+				<allow pkg="javax" />
+				<allow pkg="com.altec.bsbr.app" />
+				<allow pkg="org.slf4j" />
+				<allow pkg="org.joda" />
+
+			</subpackage>
+
+			<subpackage name="util">
+
+				<allow pkg="java" />
+				<allow pkg="javax" />
+				<allow pkg="com.altec.bsbr.app" />
+				<allow pkg="org.slf4j" />
+				<allow pkg="org.springframework" />
+				<allow pkg="br.com.gpnet.mbs" />
+				<allow pkg="org.joda" />
+
+			</subpackage>
+
+			<subpackage name="filter">
+
+				<allow pkg="java" />
+				<allow pkg="javax" />
+				<allow pkg="com.altec.bsbr.app" />
+				<allow pkg="org.slf4j" />
+				<allow pkg="org.springframework" />
+				<allow pkg="br.com.gpnet.mbs" />
+				<allow pkg="org.apache.commons" />
+				<allow pkg="org.joda" />
+				<allow pkg="org.xml.sax" />
+
+			</subpackage>
+
+			<subpackage name="servlet">
+
+				<allow pkg="java" />
+				<allow pkg="javax" />
+				<allow pkg="com.altec.bsbr.app" />
+				<allow pkg="org.slf4j" />
+				<allow pkg="org.springframework" />
+				<allow pkg="br.com.gpnet.mbs" />
+				<allow pkg="org.apache.commons" />
+				<allow pkg="org.joda" />
+				<allow pkg="org.xml.sax" />
+
+			</subpackage>
+
+		</subpackage>
+
+		<subpackage name="webservice">
+
+			<allow pkg="java" />
+			<allow pkg="javax" />
+			<allow pkg="com.altec.bsbr.fw" />
+			<allow pkg="org.slf4j" />
+			<allow pkg="org.springframework" />
+			<allow pkg="com.altec.bsbr.app.$APP_SIGLA.entity" />
+			<allow pkg="com.altec.bsbr.app.$APP_SIGLA.dto" />
+			<allow pkg="com.altec.bsbr.app.$APP_SIGLA.service" />
+
+		</subpackage>
+
+		<subpackage name="webclient">
+
+			<allow pkg="java" />
+			<allow pkg="javax" />
+			<allow pkg="com.altec.bsbr.fw" />
+			<allow pkg="org.slf4j" />
+			<allow pkg="org.springframework" />
+			<allow pkg="com.altec.bsbr.app.$APP_SIGLA.entity" />
+			<allow pkg="com.altec.bsbr.app.$APP_SIGLA.dto" />
+			<allow pkg="com.altec.bsbr.app.$APP_SIGLA.service" />
+
+		</subpackage>
+
+		<subpackage name="wsclient">
+
+			<allow pkg="java" />
+			<allow pkg="javax" />
+			<allow pkg="com.altec.bsbr.app" />
+			<allow pkg="com.altec.bsbr.fw" />
+			<allow pkg="org.slf4j" />
+
+		</subpackage>
+
+		<subpackage name="utils">
+
+			<allow pkg="java" />
+			<allow pkg="javax" />
+			<allow pkg="com.altec.bsbr.app" />
+			<allow pkg="com.altec.bsbr.fw" />
+			<allow pkg="org.slf4j" />
+			<allow pkg="org.joda" />
+			<allow pkg="org.apache.commons" />
+
+		</subpackage>
+
+		<subpackage name="util">
+
+			<allow pkg="java" />
+			<allow pkg="javax" />
+			<allow pkg="com.altec.bsbr.app" />
+			<allow pkg="com.altec.bsbr.fw" />
+			<allow pkg="org.slf4j" />
+			<allow pkg="org.joda" />
+			<allow pkg="org.apache.commons" />
+
+		</subpackage>
+
+		<subpackage name="test">
+
+			<allow pkg="java" />
+			<allow pkg="javax" />
+			<allow pkg="com" />
+			<allow pkg="org" />
+			<allow pkg="net" />
+
+			<subpackage name="batch">
+
+				<allow pkg="java" />
+				<allow pkg="javax" />
+				<allow pkg="com" />
+				<allow pkg="org" />
+				<allow pkg="net" />
+
+			</subpackage>
+
+		</subpackage>
+
+	</subpackage>
+
+</import-control>
