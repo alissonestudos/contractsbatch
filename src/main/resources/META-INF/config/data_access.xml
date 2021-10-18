@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xmlns:jee="http://www.springframework.org/schema/jee"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
+                           http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd
+                           http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee.xsd">
+
+	<bean id="defaultPersistentUnitName" class="java.lang.String">
+		<constructor-arg value="manager1" />
+	</bean>
+
+	<util:list id="persistentXmlPaths">
+		<value>${jpa.persistence.config.file}</value>
+	</util:list>
+
+	<util:map id="dataSources">
+		<entry key="datasource1">
+			<ref bean="datasource1" />
+		</entry>
+	</util:map>
+
+	<bean id="entityManagerFactory"
+		class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean"
+		autowire-candidate="default">
+		<property name="persistenceUnitManager"
+			ref="persistenceUnitManager" />
+		<property name="persistenceUnitName" value="manager1" />
+	</bean>
+
+	
+	<bean id="datasource1" class="br.com.santander.ole.datasource.CgnCredentialsDataSource" autowire-candidate="default">
+		<constructor-arg value="${enviroment}"/>
+	    <constructor-arg value="${pathCgn}"/>
+	    <constructor-arg value="${sigla}"/>
+	    <constructor-arg value="${index}"/>
+	    <property name="driverClassName" value="${jdbc.driverClassName}"/>
+	    <property name="url" value="${jdbc.url}"/>
+		<property name="paramMap">
+			<map>
+				<entry key="initialSize" value="1" />
+				<entry key="maxTotal" value="10" />
+			</map>
+		</property>
+	</bean>
+
+</beans>

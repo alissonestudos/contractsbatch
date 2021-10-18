@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!-- This configuration file was written by the eclipse-cs plugin configuration 
+	editor -->
+<!-- Checkstyle-Configuration: Isban_Checkstyle Description: none -->
+<!DOCTYPE module PUBLIC "-//Puppy Crawl//DTD Check Configuration 1.2//EN" "http://www.puppycrawl.com/dtds/configuration_1_2.dtd">
+<module name="Checker">
+	<property name="severity" value="error" />
+	<property name="charset" value="ISO-8859-1" />
+	<property name="localeCountry" value="BR" />
+	<property name="localeLanguage" value="pt" />
+	<module name="TreeWalker">
+		<module name="Regexp">
+			<property name="message"
+				value="Nao e permitido setar o Default Timezone." />
+			<property name="severity" value="error" />
+			<property name="format" value=".*TimeZone.setDefault.*" />
+			<property name="ignoreComments" value="true" />
+			<property name="illegalPattern" value="true" />
+			<property name="errorLimit" value="1" />
+		</module>
+		<module name="Regexp">
+			<property name="message"
+				value="Nao e permitido setar o Default Locale." />
+			<property name="severity" value="error" />
+			<property name="format" value=".*Locale.setDefault.*" />
+			<property name="ignoreComments" value="true" />
+			<property name="illegalPattern" value="true" />
+			<property name="errorLimit" value="1" />
+		</module>
+		<module name="Regexp">
+			<property name="message"
+				value="Pattern inv�lido setDefault()" />
+			<property name="severity" value="warning" />
+			<property name="format" value=".*setDefault.*" />
+			<property name="ignoreComments" value="true" />
+			<property name="illegalPattern" value="true" />
+			<property name="errorLimit" value="1" />
+		</module>
+	</module>
+</module>

@@ -1,0 +1,505 @@
+<?xml version="1.0"?>
+<!DOCTYPE import-control PUBLIC
+    "-//Puppy Crawl//DTD Import Control 1.0//EN"
+    "http://www.puppycrawl.com/dtds/import_control_1_0.dtd">
+
+<!-- Atencao: todos os pacotes devem ter o nome totalmente qualificado -->
+
+<import-control pkg="com.altec.bsbr.app.abc">
+
+	<allow pkg="com" />
+	<allow pkg="net" />
+	<allow pkg="org" />
+	<allow pkg="java" />
+	<allow pkg="javax" />
+
+	<!--disallow pkg="java.sql"/> <disallow pkg="javax.sql"/> <disallow pkg="javax.persistence"/> 
+		<disallow pkg="org.springframework.jdbc"/> <disallow pkg="org.hibernate"/ -->
+
+	<subpackage name="audit">
+
+		<disallow pkg="com.altec.bsbr.app.abc.converter" />
+		<disallow pkg="com.altec.bsbr.app.abc.dao.impl" />
+		<disallow pkg="com.altec.bsbr.app.abc.report" />
+		<disallow pkg="com.altec.bsbr.app.abc.validator" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.filter" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.image" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.jsf" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.jsf.component" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.jsf.converter" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.jsf.validator" />
+		<disallow pkg="com.altec.bsbr.app.abc.webclient" />
+		<disallow pkg="com.altec.bsbr.app.abc.webservice" />
+		<disallow pkg="com.altec.bsbr.app.abc.webservice.impl" />
+
+	</subpackage>
+
+	<subpackage name="converter">
+
+		<disallow pkg="com.altec.bsbr.app.abc.audit" />
+		<disallow pkg="com.altec.bsbr.app.abc.dao" />
+		<disallow pkg="com.altec.bsbr.app.abc.dao.impl" />
+		<disallow pkg="com.altec.bsbr.app.abc.ejb" />
+		<disallow pkg="com.altec.bsbr.app.abc.jms" />
+		<disallow pkg="com.altec.bsbr.app.abc.mbean" />
+		<disallow pkg="com.altec.bsbr.app.abc.message" />
+		<disallow pkg="com.altec.bsbr.app.abc.report" />
+		<disallow pkg="com.altec.bsbr.app.abc.service" />
+		<disallow pkg="com.altec.bsbr.app.abc.service.impl" />
+		<disallow pkg="com.altec.bsbr.app.abc.validator" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.filter" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.image" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.jsf" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.jsf.component" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.jsf.converter" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.jsf.validator" />
+		<disallow pkg="com.altec.bsbr.app.abc.webclient" />
+		<disallow pkg="com.altec.bsbr.app.abc.webservice" />
+		<disallow pkg="com.altec.bsbr.app.abc.webservice.impl" />
+		<disallow pkg="br.com.santander.ole.dto" />
+
+	</subpackage>
+
+	<subpackage name="dao">
+
+		<disallow pkg="com.altec.bsbr.app.abc.audit" />
+		<disallow pkg="com.altec.bsbr.app.abc.converter" />
+		<disallow pkg="com.altec.bsbr.app.abc.dao.impl"
+			local-only="true" />
+		<disallow pkg="com.altec.bsbr.app.abc.ejb" />
+		<disallow pkg="com.altec.bsbr.app.abc.jms" />
+		<disallow pkg="com.altec.bsbr.app.abc.mbean" />
+		<disallow pkg="com.altec.bsbr.app.abc.message" />
+		<disallow pkg="com.altec.bsbr.app.abc.report" />
+		<disallow pkg="com.altec.bsbr.app.abc.service" />
+		<disallow pkg="com.altec.bsbr.app.abc.service.impl" />
+		<disallow pkg="com.altec.bsbr.app.abc.validator" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.filter" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.image" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.jsf" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.jsf.component" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.jsf.converter" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.jsf.validator" />
+		<disallow pkg="com.altec.bsbr.app.abc.webclient" />
+		<disallow pkg="com.altec.bsbr.app.abc.webservice" />
+		<disallow pkg="com.altec.bsbr.app.abc.webservice.impl" />
+		<disallow pkg="br.com.santander.ole.dto" local-only="true" />
+
+		<subpackage name="impl">
+
+		</subpackage>
+
+
+	</subpackage>
+
+	<subpackage name="ejb">
+
+		<disallow pkg="com.altec.bsbr.app.abc.audit" />
+		<disallow pkg="com.altec.bsbr.app.abc.converter" />
+		<disallow pkg="com.altec.bsbr.app.abc.dao" />
+		<disallow pkg="com.altec.bsbr.app.abc.dao.impl" />
+		<disallow pkg="com.altec.bsbr.app.abc.entity" />
+		<disallow pkg="com.altec.bsbr.app.abc.exception" />
+		<disallow pkg="com.altec.bsbr.app.abc.jms" />
+		<disallow pkg="com.altec.bsbr.app.abc.mbean" />
+		<disallow pkg="com.altec.bsbr.app.abc.message" />
+		<disallow pkg="com.altec.bsbr.app.abc.report" />
+		<disallow pkg="com.altec.bsbr.app.abc.service.impl" />
+		<disallow pkg="com.altec.bsbr.app.abc.validator" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.filter" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.image" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.jsf" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.jsf.component" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.jsf.converter" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.jsf.validator" />
+		<disallow pkg="com.altec.bsbr.app.abc.webclient" />
+		<disallow pkg="com.altec.bsbr.app.abc.webservice.impl" />
+
+	</subpackage>
+
+	<subpackage name="entity">
+
+		<disallow pkg="com.altec.bsbr.app.abc.audit" />
+		<disallow pkg="com.altec.bsbr.app.abc.converter" />
+		<disallow pkg="com.altec.bsbr.app.abc.dao" />
+		<disallow pkg="com.altec.bsbr.app.abc.dao.impl" />
+		<disallow pkg="com.altec.bsbr.app.abc.ejb" />
+		<disallow pkg="com.altec.bsbr.app.abc.exception" />
+		<disallow pkg="com.altec.bsbr.app.abc.jms" />
+		<disallow pkg="com.altec.bsbr.app.abc.mbean" />
+		<disallow pkg="com.altec.bsbr.app.abc.message" />
+		<disallow pkg="com.altec.bsbr.app.abc.report" />
+		<disallow pkg="com.altec.bsbr.app.abc.service" />
+		<disallow pkg="com.altec.bsbr.app.abc.service.impl" />
+		<disallow pkg="com.altec.bsbr.app.abc.validator" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.filter" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.image" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.jsf" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.jsf.component" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.jsf.converter" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.jsf.validator" />
+		<disallow pkg="com.altec.bsbr.app.abc.webclient" />
+		<disallow pkg="com.altec.bsbr.app.abc.webservice" />
+		<disallow pkg="com.altec.bsbr.app.abc.webservice.impl" />
+		<disallow pkg="br.com.santander.ole.dto" />
+
+	</subpackage>
+
+	<subpackage name="exception">
+
+		<disallow pkg="com.altec.bsbr.app.abc.audit" />
+		<disallow pkg="com.altec.bsbr.app.abc.converter" />
+		<disallow pkg="com.altec.bsbr.app.abc.dao" />
+		<disallow pkg="com.altec.bsbr.app.abc.dao.impl" />
+		<disallow pkg="com.altec.bsbr.app.abc.ejb" />
+		<disallow pkg="com.altec.bsbr.app.abc.entity" />
+
+		<disallow pkg="com.altec.bsbr.app.abc.jms" />
+		<disallow pkg="com.altec.bsbr.app.abc.mbean" />
+
+		<disallow pkg="com.altec.bsbr.app.abc.report" />
+		<disallow pkg="com.altec.bsbr.app.abc.service" />
+		<disallow pkg="com.altec.bsbr.app.abc.service.impl" />
+		<disallow pkg="com.altec.bsbr.app.abc.validator" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.filter" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.image" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.jsf" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.jsf.component" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.jsf.converter" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.jsf.validator" />
+		<disallow pkg="com.altec.bsbr.app.abc.webclient" />
+		<disallow pkg="com.altec.bsbr.app.abc.webservice" />
+		<disallow pkg="com.altec.bsbr.app.abc.webservice.impl" />
+		<disallow pkg="br.com.santander.ole.dto" />
+
+	</subpackage>
+
+	<subpackage name="jms">
+
+		<disallow pkg="com.altec.bsbr.app.abc.audit" />
+		<disallow pkg="com.altec.bsbr.app.abc.converter" />
+		<disallow pkg="com.altec.bsbr.app.abc.dao" />
+		<disallow pkg="com.altec.bsbr.app.abc.dao.impl" />
+		<disallow pkg="com.altec.bsbr.app.abc.ejb" />
+		<disallow pkg="com.altec.bsbr.app.abc.entity" />
+		<disallow pkg="com.altec.bsbr.app.abc.mbean" />
+		<disallow pkg="com.altec.bsbr.app.abc.message" />
+		<disallow pkg="com.altec.bsbr.app.abc.report" />
+		<disallow pkg="com.altec.bsbr.app.abc.service" />
+		<disallow pkg="com.altec.bsbr.app.abc.service.impl" />
+		<disallow pkg="com.altec.bsbr.app.abc.validator" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.filter" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.image" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.jsf" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.jsf.component" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.jsf.converter" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.jsf.validator" />
+		<disallow pkg="com.altec.bsbr.app.abc.webclient" />
+		<disallow pkg="com.altec.bsbr.app.abc.webservice" />
+		<disallow pkg="com.altec.bsbr.app.abc.webservice.impl" />
+
+	</subpackage>
+
+	<subpackage name="mbean">
+
+		<disallow pkg="com.altec.bsbr.app.abc.audit" />
+		<disallow pkg="com.altec.bsbr.app.abc.converter" />
+		<disallow pkg="com.altec.bsbr.app.abc.dao" />
+		<disallow pkg="com.altec.bsbr.app.abc.dao.impl" />
+		<disallow pkg="com.altec.bsbr.app.abc.ejb" />
+		<disallow pkg="com.altec.bsbr.app.abc.jms" />
+		<disallow pkg="com.altec.bsbr.app.abc.message" />
+		<disallow pkg="com.altec.bsbr.app.abc.report" />
+		<disallow pkg="com.altec.bsbr.app.abc.service.impl" />
+		<disallow pkg="com.altec.bsbr.app.abc.validator" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.filter" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.image" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.jsf" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.jsf.component" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.jsf.converter" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.jsf.validator" />
+		<disallow pkg="com.altec.bsbr.app.abc.webclient" />
+		<disallow pkg="com.altec.bsbr.app.abc.webservice" />
+		<disallow pkg="com.altec.bsbr.app.abc.webservice.impl" />
+
+	</subpackage>
+
+	<subpackage name="message">
+
+		<disallow pkg="com.altec.bsbr.app.abc.audit" />
+		<disallow pkg="com.altec.bsbr.app.abc.converter" />
+		<disallow pkg="com.altec.bsbr.app.abc.dao" />
+		<disallow pkg="com.altec.bsbr.app.abc.dao.impl" />
+		<disallow pkg="com.altec.bsbr.app.abc.ejb" />
+		<disallow pkg="com.altec.bsbr.app.abc.entity" />
+		<disallow pkg="com.altec.bsbr.app.abc.exception" />
+		<disallow pkg="com.altec.bsbr.app.abc.jms" />
+		<disallow pkg="com.altec.bsbr.app.abc.mbean" />
+		<disallow pkg="com.altec.bsbr.app.abc.report" />
+		<disallow pkg="com.altec.bsbr.app.abc.service" />
+		<disallow pkg="com.altec.bsbr.app.abc.service.impl" />
+		<disallow pkg="com.altec.bsbr.app.abc.validator" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.filter" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.image" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.jsf" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.jsf.component" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.jsf.converter" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.jsf.validator" />
+		<disallow pkg="com.altec.bsbr.app.abc.webclient" />
+		<disallow pkg="com.altec.bsbr.app.abc.webservice" />
+		<disallow pkg="com.altec.bsbr.app.abc.webservice.impl" />
+		<disallow pkg="br.com.santander.ole.dto" />
+
+	</subpackage>
+
+	<subpackage name="report">
+
+		<disallow pkg="com.altec.bsbr.app.abc.audit" />
+		<disallow pkg="com.altec.bsbr.app.abc.converter" />
+		<disallow pkg="com.altec.bsbr.app.abc.dao" />
+		<disallow pkg="com.altec.bsbr.app.abc.dao.impl" />
+		<disallow pkg="com.altec.bsbr.app.abc.ejb" />
+		<disallow pkg="com.altec.bsbr.app.abc.entity" />
+		<disallow pkg="com.altec.bsbr.app.abc.exception" />
+		<disallow pkg="com.altec.bsbr.app.abc.jms" />
+		<disallow pkg="com.altec.bsbr.app.abc.mbean" />
+		<disallow pkg="com.altec.bsbr.app.abc.message" />
+		<disallow pkg="com.altec.bsbr.app.abc.service" />
+		<disallow pkg="com.altec.bsbr.app.abc.service.impl" />
+		<disallow pkg="com.altec.bsbr.app.abc.validator" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.filter" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.image" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.jsf" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.jsf.component" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.jsf.converter" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.jsf.validator" />
+		<disallow pkg="com.altec.bsbr.app.abc.webclient" />
+		<disallow pkg="com.altec.bsbr.app.abc.webservice" />
+		<disallow pkg="com.altec.bsbr.app.abc.webservice.impl" />
+		<disallow pkg="br.com.santander.ole.dto" />
+
+	</subpackage>
+
+	<subpackage name="service">
+
+		<disallow pkg="com.altec.bsbr.app.abc.audit" />
+		<disallow pkg="com.altec.bsbr.app.abc.converter" />
+		<disallow pkg="com.altec.bsbr.app.abc.dao" local-only="true" />
+		<disallow pkg="com.altec.bsbr.app.abc.dao.impl" />
+		<disallow pkg="com.altec.bsbr.app.abc.ejb" local-only="true" />
+		<disallow pkg="com.altec.bsbr.app.abc.jms" local-only="true" />
+		<disallow pkg="com.altec.bsbr.app.abc.mbean"
+			local-only="true" />
+		<disallow pkg="com.altec.bsbr.app.abc.message" />
+		<disallow pkg="com.altec.bsbr.app.abc.report" />
+		<disallow pkg="com.altec.bsbr.app.abc.service.impl"
+			local-only="true" />
+		<disallow pkg="com.altec.bsbr.app.abc.validator" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.filter" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.image" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.jsf" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.jsf.component" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.jsf.converter" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.jsf.validator" />
+		<disallow pkg="com.altec.bsbr.app.abc.webclient" />
+		<disallow pkg="com.altec.bsbr.app.abc.webservice"
+			local-only="true" />
+		<disallow pkg="com.altec.bsbr.app.abc.webservice.impl" />
+
+		<subpackage name="impl">
+		</subpackage>
+
+	</subpackage>
+
+	<subpackage name="validator">
+		<disallow pkg="com.altec.bsbr.app.abc.audit" />
+		<disallow pkg="com.altec.bsbr.app.abc.converter" />
+		<disallow pkg="com.altec.bsbr.app.abc.dao" />
+		<disallow pkg="com.altec.bsbr.app.abc.dao.impl" />
+		<disallow pkg="com.altec.bsbr.app.abc.ejb" />
+		<disallow pkg="com.altec.bsbr.app.abc.jms" />
+		<disallow pkg="com.altec.bsbr.app.abc.mbean" />
+		<disallow pkg="com.altec.bsbr.app.abc.message" />
+		<disallow pkg="com.altec.bsbr.app.abc.report" />
+		<disallow pkg="com.altec.bsbr.app.abc.service" />
+		<disallow pkg="com.altec.bsbr.app.abc.service.impl" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.filter" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.image" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.jsf" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.jsf.component" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.jsf.converter" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.jsf.validator" />
+		<disallow pkg="com.altec.bsbr.app.abc.webclient" />
+		<disallow pkg="com.altec.bsbr.app.abc.webservice" />
+		<disallow pkg="com.altec.bsbr.app.abc.webservice.impl" />
+
+	</subpackage>
+
+	<subpackage name="web">
+
+		<disallow pkg="com.altec.bsbr.app.abc.audit" />
+		<disallow pkg="com.altec.bsbr.app.abc.dao" />
+		<disallow pkg="com.altec.bsbr.app.abc.dao.impl" />
+		<disallow pkg="com.altec.bsbr.app.abc.ejb" />
+		<disallow pkg="com.altec.bsbr.app.abc.mbean" />
+		<disallow pkg="com.altec.bsbr.app.abc.service.impl" />
+
+
+		<subpackage name="filter">
+			<disallow pkg="com.altec.bsbr.app.abc.converter" />
+			<disallow pkg="com.altec.bsbr.app.abc.message" />
+			<disallow pkg="com.altec.bsbr.app.abc.report" />
+			<disallow pkg="com.altec.bsbr.app.abc.validator" />
+			<disallow pkg="com.altec.bsbr.app.abc.web.image" />
+			<disallow pkg="com.altec.bsbr.app.abc.web.jsf" />
+			<disallow pkg="com.altec.bsbr.app.abc.web.jsf.component" />
+			<disallow pkg="com.altec.bsbr.app.abc.web.jsf.converter" />
+			<disallow pkg="com.altec.bsbr.app.abc.web.jsf.validator" />
+			<disallow pkg="com.altec.bsbr.app.abc.webclient" />
+			<disallow pkg="com.altec.bsbr.app.abc.webservice" />
+			<disallow pkg="com.altec.bsbr.app.abc.webservice.impl" />
+			<disallow pkg="br.com.santander.ole.dto" />
+
+		</subpackage>
+
+		<subpackage name="image">
+
+			<disallow pkg="com.altec.bsbr.app.abc.converter" />
+			<disallow pkg="com.altec.bsbr.app.abc.entity" />
+			<disallow pkg="com.altec.bsbr.app.abc.exception" />
+			<disallow pkg="com.altec.bsbr.app.abc.jms" />
+			<disallow pkg="com.altec.bsbr.app.abc.message" />
+			<disallow pkg="com.altec.bsbr.app.abc.report" />
+			<disallow pkg="com.altec.bsbr.app.abc.validator" />
+			<disallow pkg="com.altec.bsbr.app.abc.web.filter" />
+			<disallow pkg="com.altec.bsbr.app.abc.web.jsf" />
+			<disallow pkg="com.altec.bsbr.app.abc.web.jsf.component" />
+			<disallow pkg="com.altec.bsbr.app.abc.web.jsf.converter" />
+			<disallow pkg="com.altec.bsbr.app.abc.web.jsf.validator" />
+			<disallow pkg="com.altec.bsbr.app.abc.webclient" />
+			<disallow pkg="com.altec.bsbr.app.abc.webservice" />
+			<disallow pkg="com.altec.bsbr.app.abc.webservice.impl" />
+			<disallow pkg="br.com.santander.ole.dto" />
+
+		</subpackage>
+
+		<subpackage name="jsf">
+
+			<disallow pkg="com.altec.bsbr.app.abc.exception"
+				local-only="true" />
+			<disallow pkg="com.altec.bsbr.app.abc.web.image" />
+			<disallow pkg="com.altec.bsbr.app.abc.webclient" />
+			<disallow pkg="com.altec.bsbr.app.abc.webservice" />
+			<disallow pkg="com.altec.bsbr.app.abc.webservice.impl" />
+			<disallow pkg="br.com.santander.ole.dto" />
+
+			<subpackage name="component">
+
+			</subpackage>
+
+			<subpackage name="converter">
+
+			</subpackage>
+
+			<subpackage name="validator">
+				<disallow pkg="com.altec.bsbr.app.abc.converter" />
+			</subpackage>
+
+		</subpackage>
+
+	</subpackage>
+
+	<subpackage name="webclient">
+
+		<disallow pkg="com.altec.bsbr.app.abc.audit" />
+		<disallow pkg="com.altec.bsbr.app.abc.converter" />
+		<disallow pkg="com.altec.bsbr.app.abc.dao" />
+		<disallow pkg="com.altec.bsbr.app.abc.dao.impl" />
+		<disallow pkg="com.altec.bsbr.app.abc.ejb" />
+		<disallow pkg="com.altec.bsbr.app.abc.mbean" />
+		<disallow pkg="com.altec.bsbr.app.abc.message" />
+		<disallow pkg="com.altec.bsbr.app.abc.report" />
+
+		<disallow pkg="com.altec.bsbr.app.abc.service.impl" />
+		<disallow pkg="com.altec.bsbr.app.abc.validator" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.filter" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.image" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.jsf" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.jsf.component" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.jsf.converter" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.jsf.validator" />
+
+		<disallow pkg="com.altec.bsbr.app.abc.webservice" />
+		<disallow pkg="com.altec.bsbr.app.abc.webservice.impl" />
+		<disallow pkg="br.com.santander.ole.dto" />
+
+
+	</subpackage>
+
+	<subpackage name="webservice">
+
+		<disallow pkg="com.altec.bsbr.app.abc.audit" />
+		<disallow pkg="com.altec.bsbr.app.abc.converter" />
+		<disallow pkg="com.altec.bsbr.app.abc.dao" />
+		<disallow pkg="com.altec.bsbr.app.abc.dao.impl" />
+
+		<disallow pkg="com.altec.bsbr.app.abc.entity"
+			local-only="true" />
+
+		<disallow pkg="com.altec.bsbr.app.abc.mbean" />
+		<disallow pkg="com.altec.bsbr.app.abc.message" />
+		<disallow pkg="com.altec.bsbr.app.abc.report" />
+		<disallow pkg="com.altec.bsbr.app.abc.service"
+			local-only="true" />
+		<disallow pkg="com.altec.bsbr.app.abc.service.impl" />
+		<disallow pkg="com.altec.bsbr.app.abc.validator" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.filter" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.image" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.jsf" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.jsf.component" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.jsf.converter" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.jsf.validator" />
+		<disallow pkg="com.altec.bsbr.app.abc.webclient" />
+
+		<disallow pkg="com.altec.bsbr.app.abc.webservice.impl"
+			local-only="true" />
+
+		<subpackage name="impl">
+			<disallow pkg="com.altec.bsbr.app.abc.ejb" />
+
+			<disallow pkg="com.altec.bsbr.app.abc.jms" />
+
+			<disallow pkg="com.altec.bsbr.app.abc.webservice" />
+
+		</subpackage>
+
+	</subpackage>
+
+	<subpackage name="dto">
+		<disallow pkg="com.altec.bsbr.app.abc.audit" />
+		<disallow pkg="com.altec.bsbr.app.abc.converter" />
+		<disallow pkg="com.altec.bsbr.app.abc.dao" />
+		<disallow pkg="com.altec.bsbr.app.abc.dao.impl" />
+		<disallow pkg="com.altec.bsbr.app.abc.ejb" />
+		<disallow pkg="com.altec.bsbr.app.abc.entity" />
+		<disallow pkg="com.altec.bsbr.app.abc.exception" />
+		<disallow pkg="com.altec.bsbr.app.abc.jms" />
+		<disallow pkg="com.altec.bsbr.app.abc.mbean" />
+		<disallow pkg="com.altec.bsbr.app.abc.message" />
+		<disallow pkg="com.altec.bsbr.app.abc.report" />
+		<disallow pkg="com.altec.bsbr.app.abc.service" />
+		<disallow pkg="com.altec.bsbr.app.abc.service.impl" />
+		<disallow pkg="com.altec.bsbr.app.abc.validator" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.filter" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.image" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.jsf" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.jsf.component" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.jsf.converter" />
+		<disallow pkg="com.altec.bsbr.app.abc.web.jsf.validator" />
+		<disallow pkg="com.altec.bsbr.app.abc.webclient" />
+		<disallow pkg="com.altec.bsbr.app.abc.webservice" />
+		<disallow pkg="com.altec.bsbr.app.abc.webservice.impl" />
+	</subpackage>
+
+
+</import-control>

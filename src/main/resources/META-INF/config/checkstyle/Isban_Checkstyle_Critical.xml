@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE module PUBLIC "-//Puppy Crawl//DTD Check Configuration 1.2//EN" "http://www.puppycrawl.com/dtds/configuration_1_2.dtd">
+
+<module name="Checker">
+
+	<property name="severity" value="warning" />
+	<property name="charset" value="ISO-8859-1" />
+	<property name="localeCountry" value="BR" />
+	<property name="localeLanguage" value="pt" />
+
+	<module name="TreeWalker">
+
+		<property name="tabWidth" value="4" />
+
+		<module name="EqualsHashCode" />
+
+		<module name="EmptyStatement" />
+
+		<module name="DefaultComesLast" />
+
+		<module name="FallThrough" />
+
+		<module name="HiddenField">
+			<property name="ignoreConstructorParameter" value="true" />
+			<property name="ignoreSetter" value="true" />
+		</module>
+
+		<module name="IllegalType">
+			<property name="severity" value="error" />
+			<property name="tokens"
+				value="METHOD_DEF,PARAMETER_DEF,VARIABLE_DEF" />
+			<property name="illegalClassNames" value="*Impl" />
+			<property name="format" value="^.*?Impl$" />
+		</module>
+
+		<module name="TypeName">
+			<property name="severity" value="error" />
+			<property name="format" value="^.*?[^(Impl)]$" />
+			<property name="tokens" value="INTERFACE_DEF" />
+		</module>
+
+		<module name="PackageName">
+			<property name="format"
+				value="^com\.altec\.bsbr\.app\.${app.sigla}\.(audit|batch|batch\.consumer|batch\.producer|batch\.task|converter|dao|dao\.impl|dto|ejb|entity|exception|jms|jms\.impl|mbean|message|report|service|service\.impl|util|validator|web|web\.filter|web\.jsf|web\.jsf\.component|web\.jsf\.converter|web\.jsf\.validator|web\.listener|webclient(\.[a-zA-Z0-9_]*)?|webservice)?$" />
+		</module>
+
+		<module name="PackageDeclaration">
+			<property name="severity" value="error" />
+		</module>
+
+		<module name="AvoidStarImport">
+			<property name="severity" value="error" />
+		</module>
+
+		<module name="IllegalImport">
+			<property name="severity" value="error" />
+		</module>
+
+		<module name="RedundantImport">
+			<property name="severity" value="warning" />
+		</module>
+
+		<module name="UnusedImports" />
+
+		<module name="ImportControl">
+			<property name="severity" value="error" />
+			<property name="file"
+				value="${config.location}/Isban_Checkstyle_ImportControl_Critical.xml" />
+		</module>
+
+	</module>
+
+</module>
